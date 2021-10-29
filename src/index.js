@@ -8,11 +8,11 @@ import { printTodoHtml } from './js/components';
 // *Inicializar class
 export const todoList = new TodoList()
 
-const tarea1   = new Todo( 'Tarea de prueba 1 en HTML' )
-todoList.newTodo( tarea1 )
+// const tarea1   = new Todo( 'Tarea de prueba 1 en HTML' )
+/* todoList.newTodo( tarea1 ) */
+// printTodoHtml( tarea1 )
 
 
-// console.log(todoList)
+todoList.todos.forEach(todo => printTodoHtml(todo))
 
-printTodoHtml( tarea1 )
-
+console.log( 'Todos:', todoList.todos )
